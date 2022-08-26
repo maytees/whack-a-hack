@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.covering {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: #dCE9F4;
+  opacity: 20%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  bottom: 55vh;
+  padding-top: 25vh;  
+  font-size: 3rem;
+}
+
+.start-game {          
+  position: absolute;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 1.4rem;
+  width: 10vw;
+  height: 5vh;
+  top: 80vh;
+  border-radius: 10px;
+  z-index: 6;
+}
+
+.start-game:hover {
+  cursor: pointer;
+}
+
+.description {
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  width: 100vw;
+  font-size: 1.7rem;
+}
+
+.slhslogo {
+  position: absolute;
+  z-index: 3;
+  height: 200px;
+  width: 200px;
+  bottom: 20vh;
+}
+
+.img-container {
+  padding-top: 20px;
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  justify-content: center;  
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.not-started {
+  display:flex;
+  flex-flow: wrap col;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-over {
+  padding-bottom: 20vh;
+}
+
+.game-over-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.started {
+  
 }

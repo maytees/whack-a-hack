@@ -1,0 +1,8 @@
+.bar-container {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+  color: white;
+}

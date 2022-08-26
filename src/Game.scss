@@ -1,0 +1,35 @@
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15vh;
+    padding-right: 30vw;
+}
+
+.application {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    width: 50%;
+    font-size: 8px;
+    color: white;
+}
+
+.application:hover {
+    border: 1px dashed white;
+}
+
+.app-image {
+    height: 40px;
+    width: 40px;
+}
+
+.app-name {
+    color: white;
+    text-align: center;
+}
