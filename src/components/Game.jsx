@@ -135,7 +135,6 @@ const Game = ({setScore}) => {
         
         app.name = "GOOD!"
         setTimeout(() => {
-            shuffle(apps)
             removeApp(app.id)
         }, 700);
     }
